@@ -7,6 +7,18 @@ class Book
     @title = title 
   end 
   attr_accessor :title, :author, :genre, :page_count
+  
+  def turn_page
+    puts "Flipping the page...wow, you read fast!"
+  end 
+  
+  def love 
+    puts "I love the author #{@author}."
+  end 
+end 
+
+wonder = book.new("Wonder")
+wonder.author = "RJ Palacio"
 
 
 # def title
@@ -41,9 +53,5 @@ class Book
   # end 
   
   
-  def turn_page
-    puts "Flipping the page...wow, you read fast!"
-  end 
-end 
-
+  
 
